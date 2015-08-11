@@ -20,12 +20,11 @@ public class MainActivity extends PullListActivity {
     protected void init() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setNavigationIcon(R.mipmap.title_bar_btn_back_false);
-        toolbar.setNavigationContentDescription(R.string.action_settings);
+        toolbar.setNavigationIcon(R.mipmap.title_bar_menu);
+        toolbar.setNavigationContentDescription(R.string.search_classify);
 
         setActionBar(R.string.app_name);
 
-        com.zhihaoliang.chuwei.utils.Log.log(pullList);
     }
 
     @Override
