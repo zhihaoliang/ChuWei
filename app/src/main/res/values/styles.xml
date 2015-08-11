@@ -1,20 +1,17 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+    </style>
 
-        <!-- Base application theme. -->
-        <style name="AppTheme" parent="AppTheme.Base">
-        </style>
-
-        <style name="AppTheme.Base" parent="Theme.AppCompat.NoActionBar">
-            <!-- Actionbar color -->
-            <item name="colorPrimary">@color/background_floating_material_dark</item>
-            <!--Status bar color-->
-            <item name="colorPrimaryDark">@color/background_material_dark</item>
-            <!--Window color-->
-            <item name="android:windowBackground">@color/background_material_light</item>
-        </style>
-
-    </resources>
-
-
-
+    <style name="AppTheme.Base" parent="Theme.AppCompat.NoActionBar">
+        <!--the app text size-->
+        <item name="android:windowTitleSize">9sp</item>
+        <!-- Actionbar color -->
+        <item name="colorPrimary">@color/background_material_dark</item>
+        <!--Status bar color-->
+        <item name="colorPrimaryDark">@color/background_material_dark</item>
+        <!--Window color-->
+        <item name="android:windowBackground">@color/background_material_light</item>
+    </style>
+</resources>

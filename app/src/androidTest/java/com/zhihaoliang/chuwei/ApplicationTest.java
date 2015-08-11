@@ -1,4 +1,4 @@
-package com.example.haoliang.chuwei;
+package com.zhihaoliang.chuwei;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
