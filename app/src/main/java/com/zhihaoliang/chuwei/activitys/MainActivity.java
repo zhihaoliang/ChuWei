@@ -6,26 +6,26 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.zhihaoliang.chuwei.R;
-import com.zhihaoliang.chuwei.activitys.base.BaseActivity;
+import com.zhihaoliang.chuwei.activitys.base.PullListActivity;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 
 
-public class MainActivity extends BaseActivity {
+@EActivity(R.layout.activity_main)
+public class MainActivity extends PullListActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-    }
 
     @AfterViews
-    void initView() {
+    protected void init() {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setNavigationIcon(R.mipmap.title_bar_btn_back_false);
+        toolbar.setNavigationContentDescription(R.string.action_settings);
 
+        setActionBar(R.string.app_name);
+
+        com.zhihaoliang.chuwei.utils.Log.log(pullList);
     }
 
     @Override
