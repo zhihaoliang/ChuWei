@@ -7,9 +7,9 @@
     <style name="AppTheme.Base" parent="Theme.AppCompat.NoActionBar">
         <item name="windowActionBar">false</item>
         <!-- Actionbar color -->
-        <item name="colorPrimary">@color/background_floating_material_dark</item>
+        <item name="colorPrimary">@color/black</item>
         <!--Status bar color-->
-        <item name="colorPrimaryDark">@color/background_material_dark</item>
+        <item name="colorPrimaryDark">@color/black</item>
         <!--Window color-->
         <item name="android:windowBackground">@color/background_material_light</item>
     </style>

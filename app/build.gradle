@@ -8,7 +8,7 @@ apt {
 }
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.0.0"
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
         applicationId "com.zhihaoliang.chuwei"

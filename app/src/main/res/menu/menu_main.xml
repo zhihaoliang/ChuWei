@@ -5,8 +5,8 @@
 
     <item
         android:id="@+id/action_settings"
-        android:title="@string/action_settings"
-        android:icon="@mipmap/title_bar_btn_menu_false"
+        android:title="@string/member_area"
+        android:icon="@mipmap/title_bar_profile"
         android:orderInCategory="100"
         app:showAsAction="always" />
 </menu>

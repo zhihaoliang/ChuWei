@@ -3,6 +3,8 @@ package com.zhihaoliang.chuwei.activitys;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.zhihaoliang.chuwei.R;
 import com.zhihaoliang.chuwei.activitys.base.PullListActivity;
@@ -19,8 +21,8 @@ public class MainActivity extends PullListActivity {
     protected void init() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setNavigationIcon(R.mipmap.title_bar_btn_back_false);
-        toolbar.setNavigationContentDescription(R.string.action_settings);
+        toolbar.setNavigationIcon(R.mipmap.title_bar_menu);
+        toolbar.setNavigationContentDescription(R.string.search_classify);
 
         setActionBar(R.string.app_name);
     }
@@ -44,5 +46,10 @@ public class MainActivity extends PullListActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        return null;
     }
 }
